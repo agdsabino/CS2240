@@ -1,6 +1,6 @@
 # CS2240
 
-A website made from a Bootstrap template.
+A website made from a Bootstrap CSS template.
 
 ## Credits
 

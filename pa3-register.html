@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sign Up</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Mukta:wght@400;500;600&family=Reem+Kufi:wght@400;500;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+        
+        <!-- CSS Framework -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- CSS File -->
+        <link rel="stylesheet" href="assets/css/pa3-style.css">
+
+    </head>
+    <body id="register">
+        <header id="header-register" class="header container-fluid py-2 mb-5">
+            <div class="row">
+                <div class="col">
+                    <a class="nav-link text-white" href="pa3.html">HOME</a>
+                </div>
+                <div class="col">
+                    <h2 class="text-white text-center">REGISTRATION</h2>
+                </div>
+                <div class="col"></div>
+            </div>
+        </header>
+        
+        <div class="container py-5">
+            <form name="signUp" autocomplete="off" spellcheck="false">
+                <div class="mx-auto w-50">
+                    <div class="row mb-3">
+                        <div class="col-sm">
+                            <label for="firstName" class="form-label">FIRST NAME</label>
+                            <input type="text" class="name form-control" id="firstName">
+                        </div>
+                        <div class="col-sm">
+                            <label for="lastName" class="form-label">LAST NAME</label>
+                            <input type="text" class="name form-control" id="lastName">
+                        </div>
+                        <span class="validationError" id="nameCheck">The fields above are required.</span>
+                    </div>
+                    <div class="row mb-3">
+                        <fieldset class="col">
+                            <legend class="form">SEX</legend>
+                            <div class="d-flex flex-row">
+                                <div class="form-check me-5">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" checked>
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="female">
+                                    <label class="form-check-label" for="female">Female</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="w-100"></div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="birthDay" class="form-label">BIRTHDAY</label>
+                            <input type="date" class="form-control" id="birthDay" value="2021-03">
+                            <span class="validationError" id="bdayCheck">Invalid birthday</span>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="emailAddress" class="form-label">EMAIL ADDRESS</label>
+                            <input type="email" class="form-control" id="emailAddress">
+                            <span class="validationError" id="emailCheck">Invalid email</span>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-sm">
+                            <label for="pass" class="form-label">PASSWORD</label>
+                            <input type="password" class="form-control" id="pass">
+                            <span class="validationError" id="passwordCheck">Length of password must be within 5 to 12 characters</span>
+                        </div>
+                        <div class="col-sm">
+                            <label for="verifyPass" class="form-label">VERIFY PASSWORD</label>
+                            <input type="password" class="form-control" id="verifyPass">
+                            <span class="validationError" id="passwordVerify">Passwords do not match</span>
+                        </div>
+                    </div>
+                    <div class="row mx-auto">
+                        <button type="button" class="btn" id="submitSignUp">SIGN UP</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- JS File -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/js/pa3-register.js" async defer></script>
+    </body>
+</html>

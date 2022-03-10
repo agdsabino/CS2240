@@ -1,0 +1,362 @@
+/*--------------------------------------------------------------
+# General 1D1C1C
+--------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+h1 {
+    color: #D02332;
+    letter-spacing: 7px;
+    font-weight: 600;
+    font-size: 35px;  
+}
+
+h2 {
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-size: 30px; 
+}
+
+h3 {
+    color: #faa93f;
+    letter-spacing: 4px;
+}
+
+h4 {
+    color: rgb(185, 130, 94);
+}
+
+h5 {
+    color: #d6433e;
+}
+
+body {
+    background-color: #141414;
+}
+
+body#main {
+    padding-top: 100px;
+}
+
+/*--------------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/
+
+#mainModal {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#mainModal button {
+    color: #fff;
+    border-color: #D02332;
+    background-color: #D02332;
+    border-radius: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#mainModal button:hover {
+    border-color: #96252f;
+    background-color: #96252f;
+}
+
+#mainModal input {
+    background-color: #1D1C1C;
+    border-color: #1D1C1C;
+    border-radius: 0;
+    box-shadow: none !important;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+#mainModal label {
+    color: #d33643;
+}
+
+#mainModal .modal-btn {
+    background-color: transparent;
+}
+
+#mainModal .modal-btn:hover {
+    background-color: transparent;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+#navigation {
+    background-color: #1D1C1C;
+    color: #000;
+}
+
+#navigation a {
+    color: rgb(236, 172, 129);
+}
+
+#navigation hr {
+    width: 100%;
+}
+
+#navigation ul {
+    font-family: 'Contrail One', cursive;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+#navigation a:hover {
+    color: #D02332;
+}
+
+#navigation .item a {
+    color: rgb(236, 172, 129);
+}
+
+#navigation .item .selected {
+    background-color: #fff;
+    color: #D02332;
+}
+
+#navigation .item a:not(.selected):hover {
+    background-color: #000;
+    color: #D02332;
+}
+
+#navigation .nav-1 {
+    background-color: none;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.header {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#header-register {
+    background-color: #96252f;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+    color: #fff;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+
+#footer a {
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#footer a:hover {
+    color: #92887b;
+}
+
+#footer span {
+    color: #faa93f;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+#footer div {
+    background-color: #1b1515;
+}
+
+/*--------------------------------------------------------------
+# Timeline Section
+--------------------------------------------------------------*/
+
+#timeline {
+    color: #fff;
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#timeline.timeline-container {
+    background-color: #2B2323;
+}
+
+#timeline .timeline-item {
+    color: #B9825E;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+#timeline .timeline-item .timeline-dot {
+    background-color: #141414;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    transition: .5s;
+    margin-top: -15px;
+}
+
+#timeline .timeline-item .timeline-dot:not(.selected):hover {
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
+#timeline .timeline-item .timeline-dot.selected {
+    background-color: #fff;
+    transform: scale(1.25);
+}
+
+@media (max-width: 575.98px){ 
+    #timeline #carouselContainer {
+        text-align: center;
+    }
+}
+
+#timeline .carousel-inner {
+    min-height: 100px;
+    max-height: 100px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#timeline .carousel-inner::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+}
+
+@media (min-width: 576px){
+    #timeline .carousel-item {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 768px){
+    #timeline .carousel-item {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media (min-width: 992px){
+    #timeline .carousel-item {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (min-width: 1200px){
+    #timeline .carousel-item {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+
+#timeline .carousel-control-prev {
+    margin-left: -25px;
+}
+
+#timeline .carousel-control-next {
+    margin-right: -25px;
+}
+
+/*--------------------------------------------------------------
+# Aftermath Section
+--------------------------------------------------------------*/
+
+#aftermath {
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+/*--------------------------------------------------------------
+# Images Section 
+--------------------------------------------------------------*/
+
+#images {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+/*--------------------------------------------------------------
+# Validation
+--------------------------------------------------------------*/
+
+.validationError {
+    color: red;
+    font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+# Registration Form
+--------------------------------------------------------------*/
+
+#register {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Reem Kufi', sans-serif;
+    font-weight: 400;
+}
+
+#register input {
+    font-family: 'Reem Kufi', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    box-shadow: none !important;
+}
+
+#register input:not([type=radio]) {
+    background-color: none;
+    border: 1px solid #141414;
+    border-radius: 0;
+}
+
+#register input[type=radio]{
+    border: 2px solid #141414;
+}
+
+#register label, legend {
+    color: #7a1921;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#register button {
+    background-color: none;
+    border: 1px solid #6e1a21;
+    border-radius: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: none !important;
+}
+
+#register button:hover {
+    color: #fff;
+    background-color: #141414;
+    border-color: #141414;
+}
+

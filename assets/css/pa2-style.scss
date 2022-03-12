@@ -1,0 +1,179 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+h1 {
+    font-family: 'Caudex', serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 7px;
+}
+
+h3 {
+    font-family: 'Vidaloka', serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 400;
+}
+
+body {
+    background-color: #3c92d3;
+}
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+
+#intro {
+    color: #fff;
+    font-family: 'Suranna', serif;
+    font-size: 22.5px;
+    font-weight: 400;
+}
+
+#intro .vl {
+    border-left: 1px solid white;
+    height: 200px;
+    margin-left: 50%;
+}
+
+#intro .define {
+    max-width: 300px;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+#intro .define span {
+    letter-spacing: 3.2px;
+}
+
+#intro .login {
+    color: #fff;
+    font-family: 'Inconsolata', monospace;
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    transition: 0.5s;
+    
+}
+
+#intro .login:hover {
+    border-bottom: 1px solid #fff;
+}
+
+/*--------------------------------------------------------------
+# Development
+--------------------------------------------------------------*/
+
+#development {
+    color: #000;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+#development h2 {
+    color: #2872aa;
+}
+
+#development .dev-content {
+    text-align: justify;
+}
+
+/*--------------------------------------------------------------
+# Image Carousel Section
+--------------------------------------------------------------*/
+
+#images {
+    color: #fff;
+    font-family: 'Work Sans', sans-serif; 
+    font-weight: 200;
+    font-size: 25px;
+}
+
+#images span {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+#images .carousel .carousel-caption {
+    left: auto;
+    position: relative;
+    right: auto;
+}
+
+#images .carousel .carousel-caption p {
+    font-size: 18px;
+    min-height: 100px;
+}
+
+#images .carousel .carousel-control-prev {
+    margin-left: -25px;
+}
+  
+#images .carousel .carousel-control-next {
+    margin-right: -25px;
+}
+
+#images .carousel .bg-control {
+    background-color: #fff;
+    color: #3c92d3;
+}
+
+
+/*--------------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/
+
+#loginModal {
+    color: #000;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+#loginModal .sub-btn {
+    color: #fff;
+    background-color: #2872aa;
+    transition: 0.5s;
+}
+
+#loginModal .sub-btn:hover {
+    color: #fff;
+    background-color: #1c5079;
+}
+
+/*--------------------------------------------------------------
+# Login Button
+--------------------------------------------------------------*/
+
+#login {
+    bottom:40px;
+	height:60px;
+	right:40px;
+    position: fixed;
+    width:60px;
+    z-index: 10;
+}
+
+#login .login-btn {
+    color: #3c92d3;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+#login .login-btn:hover {
+    color: #fff;
+    background-color: #0c0c0c;
+}
